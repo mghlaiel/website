@@ -6493,6 +6493,8 @@ a.close.disabled {
 
 .align-middle {
   vertical-align: middle !important;
+  padding: 1em;
+  background-color: #1bb1dc;
 }
 
 .align-bottom {
