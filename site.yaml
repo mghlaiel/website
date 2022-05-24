@@ -53,7 +53,7 @@ spec:
         - "creometry.com"
       secretName: creometry-ingress-secret
        
-      secretName: creometry-ingress-secret
+     
   rules:
   - host: "creometry.com"
     http:
