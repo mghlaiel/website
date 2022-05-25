@@ -17,13 +17,10 @@ spec:
     spec:
       containers:
       - name: creometry-consulting-site
-        image: creometry/consulting-static:v0.0.3
+        image: creometry/landing-static:v0.0.4
         ports:
         - containerPort: 80
-        resources:
-          limits:
-            memory: "128Mi"
-            cpu: "250m"
+       
           
 ---
 apiVersion: v1
