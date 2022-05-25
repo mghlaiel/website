@@ -1,35 +1,33 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: creometry-consulting-deploy
+  name: creometry-consult-deploy
   labels:
-    app: creometry-consulting-site
+    app: consult
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: creometry-consulting-site
+      app: consult
   template:
     metadata:
       labels:
-        app: creometry-consulting-site
+        app: consult
         community: creometry
     spec:
       containers:
-      - name: creometry-consulting-site
-        image: creometry/landing-static:v0.0.4
+      - name: consult
+        image: creometry/consulting:v1.0.1
         ports:
         - containerPort: 80
-       
-          
 ---
 apiVersion: v1
 kind: Service
 metadata:
-  name: creometry-consulting-svc
+  name: creometry-consult-svc
 spec:
   selector:
-    app: creometry-consulting-site
+    app: consult
   ports:
     - protocol: TCP
       port: 80
@@ -63,6 +61,6 @@ spec:
         pathType: Prefix
         backend:
           service:
-            name: creometry-consulting-svc
+            name: creometry-consult-svc
             port:
               number: 80
