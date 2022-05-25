@@ -17,7 +17,7 @@ spec:
     spec:
       containers:
       - name: creometry-consulting-site
-        image: creometry/consulting-static:0.0.2
+        image: creometry/consulting-static:v0.0.2
         ports:
         - containerPort: 80
         resources:
