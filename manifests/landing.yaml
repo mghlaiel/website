@@ -17,7 +17,7 @@ spec:
     spec:
       containers:
       - name: site
-        image: creometry/website-static:v0.2.0
+        image: creometry/landing-static:v1.0.0
         ports:
         - containerPort: 80
 ---
