@@ -39,13 +39,13 @@ metadata:
   name: creometry-site-ingress
   annotations:
     cert-manager.io/cluster-issuer: letsencrypt-prod
-    kubernetes.io/ingress.class: nginx
+    # kubernetes.io/ingress.class: nginx
     #nginx.ingress.kubernetes.io/rewrite-target: /
     # nginx.ingress.kubernetes.io/affinity-canary-behavior: "sticky"
     # nginx.ingress.kubernetes.io/affinity: cookie
-    nginx.ingress.kubernetes.io/enable-cors: "true"
+    # nginx.ingress.kubernetes.io/enable-cors: "true"
     nginx.ingress.kubernetes.io/cors-allow-methods: "GET"
-    nginx.ingress.kubernetes.io/server-alias: "www.creometry.com"
+    # nginx.ingress.kubernetes.io/server-alias: "www.creometry.com"
     nginx.ingress.kubernetes.io/from-to-www-redirect: "true"
 spec:
   tls:
